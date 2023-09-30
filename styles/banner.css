@@ -1,0 +1,32 @@
+.header { /*Under in hiearchy to banner*/
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  background-color: rgb(35, 55, 75);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  height: 70px;
+  margin: 0;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.386);
+}
+
+.banner-buttons {
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  height: 60px;
+  z-index: 2;
+}
+
+.banner-button {
+  background-color: rgb(45, 70, 95);
+  border: none;
+  border-radius: 30px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 36px;
+  color: white;
+}

@@ -1,32 +1,76 @@
-.header { /*Under in hiearchy to banner*/
+:root {
+
+
+}
+body {
+  background: rgb(35,36,50);
+  background: linear-gradient(0deg, rgba(35,36,50,1) 0%, rgba(65,75,94,1) 38%, rgba(144,180,207,1) 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+div {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 52px;
-  font-weight: bold;
-  background-color: rgb(35, 55, 75);
-  color: white;
+  color: #232432;
+}
+
+nav { /*nav bar background*/
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
-  height: 70px;
+  height: 50px;
   margin: 0;
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.386);
 }
 
-.banner-buttons {
-  position: fixed;
-  top: 70px;
-  left: 0px;
-  height: 60px;
-  z-index: 2;
+.nav-name {
+  position: absolute;
+  top: 5px;
+  left: .75%;
+  font-weight: bold;
+  font-size: 3rem;
 }
 
-.banner-button {
-  background-color: rgb(45, 70, 95);
-  border: none;
-  border-radius: 30px;
+.nav-pages {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  font-size: 36px;
-  color: white;
+  color: #232432;
+  position: relative;
+  top: 5px;
+  left: 35%;
+  font-weight: bold;
+  font-size: 3rem;
+  border-style: none;
+  background: none;
+}
+
+.nav-pages::after {
+  content: '';
+  background-color: black;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.nav-pages:hover::after, .nav-pages:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+#projects::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+#projects:hover::after, #projects:focus::after {
+  transform: scale(1);
+}
+
+.nav-socials {
+
+}
+
+.nav-theme {
+
 }

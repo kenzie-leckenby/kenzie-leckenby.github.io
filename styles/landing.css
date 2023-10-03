@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(29, 25, 36);
+}
+
+.title {
+  color: white; 
+  font-family: 'Heebo', sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 42rem;
+  animation: type 3s; 
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+#page-nav {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  margin-top: 2rem;
+  opacity: 0;
+
+  animation: 2s nav-buttons-intro 1s forwards;
+}
+
+.nav-buttons {
+  color: white;
+  font-family: 'Heebo', sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  padding: 0;
+  
+  display: block;
+  position: relative;
+
+  transition: 150ms;
+  animation: -nav-buttons-hover 300ms forwards;
+}
+
+.nav-buttons:hover {
+  color: rgb(235, 92, 161);
+  animation: nav-buttons-hover 300ms forwards;
+}
+
+@keyframes nav-buttons-intro {
+  from {
+    transform: translateX(-100%)
+  }
+  to {
+    opacity: 1;
+    transform:translateX(0);
+  }
+}
+
+@keyframes nav-buttons-hover {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(15px)
+  }
+}
+
+@keyframes -nav-buttons-hover {
+  from {
+    transform: translateX(15px);
+  }
+  to {
+    transform: translateX(0)
+  }
+}
+
+#right-nav {
+  position: absolute;
+  top: 16%;
+  right: 10%;
+  opacity: 0;
+
+  animation: 2s right-nav-intro 1s forwards
+}
+
+@keyframes right-nav-intro {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.theme {
+  color: white;
+  transition: 150ms;
+  animation: -jump-effect 300ms forwards;
+}
+
+.theme:hover {
+  color: rgb(235, 92, 161);
+  cursor: pointer;
+  animation: jump-effect 300ms forwards;
+}
+
+.linkedIn {
+  color: white;
+  transition: 150ms;
+  margin-left: 2rem;
+  animation: -jump-effect 300ms forwards;
+}
+
+.linkedIn:hover {
+  color: rgb(0, 119, 181);
+  animation: jump-effect 300ms forwards;
+}
+
+@keyframes jump-effect {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes -jump-effect {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

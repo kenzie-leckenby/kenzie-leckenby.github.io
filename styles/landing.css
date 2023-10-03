@@ -2,7 +2,7 @@ body {
   background-color: rgb(29, 25, 36);
 }
 
-.title {
+#title {
   color: white; 
   font-family: 'Heebo', sans-serif;
   font-weight: bolder;
@@ -21,7 +21,7 @@ body {
   from { width: 0; } 
 } 
 
-#page-nav {
+.page-nav {
   position: absolute;
   top: 18%;
   left: 10%;
@@ -110,6 +110,13 @@ body {
   animation: jump-effect 300ms forwards;
 }
 
+.divider {
+  color:  rgb(235, 92, 161);
+  margin-left: 2rem;
+  font-size: 25px;
+  font-weight: bold;
+}
+
 .linkedIn {
   color: white;
   transition: 150ms;
@@ -119,6 +126,19 @@ body {
 
 .linkedIn:hover {
   color: rgb(0, 119, 181);
+  animation: jump-effect 300ms forwards;
+}
+
+.github {
+  color: white;
+  transition: 150ms;
+  margin-left: 2rem;
+  animation: -jump-effect 300ms forwards;
+
+}
+
+.github:hover {
+  color: rgb(108, 198, 68);
   animation: jump-effect 300ms forwards;
 }
 
@@ -138,4 +158,8 @@ body {
   to {
     transform: translateY(0);
   }
+}
+
+* {
+  scroll-behavior: smooth;
 }

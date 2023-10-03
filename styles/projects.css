@@ -1,0 +1,22 @@
+#projects {
+  position: absolute;
+  opacity: 0;
+  top: 200%;
+  bottom: -200%;
+  left: 10%;
+}
+
+.projects {
+  color: white; 
+  font-family: 'Heebo', sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+
+  position: absolute;
+  top: 210%;
+  left: 10%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 42rem;
+  animation: type 3s; 
+}

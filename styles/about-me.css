@@ -1,0 +1,21 @@
+#about-me {
+  position: absolute;
+  opacity: 0;
+  top: 100%;
+  left: 10%;
+}
+
+.about-me {
+  color: white; 
+  font-family: 'Heebo', sans-serif;
+  font-weight: bolder;
+  font-size: 5rem;
+
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 42rem;
+  animation: type 3s; 
+}

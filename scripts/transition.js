@@ -1,6 +1,7 @@
-const element = document.querySelector('#title, .page-nav');
-const observer = new IntersectionObserver(entries => {
-  element.classList.toggle( 'animation', entries[0].isIntersecting );
-});
+const pg1 = document.getElementById("page-1");
+const pg2 = document.getElementById("page-2");
+const pg3 = document.getElementById("page-3");
 
-observer.observe( element );
+function test() {
+  pg1.classList.remove("page-nav");
+}

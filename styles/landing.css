@@ -2,7 +2,14 @@ body {
   background-color: rgb(29, 25, 36);
 }
 
-#title {
+#landing {
+  position: absolute;
+  opacity: 0;
+  top: 0%;
+  left: 10%;
+}
+
+.title {
   color: white; 
   font-family: 'Heebo', sans-serif;
   font-weight: bolder;
@@ -28,7 +35,7 @@ body {
   margin-top: 2rem;
   opacity: 0;
 
-  animation: 2s nav-buttons-intro 1s forwards;
+  animation: 2s left-intro 1s forwards;
 }
 
 .nav-buttons {
@@ -51,7 +58,7 @@ body {
   animation: nav-buttons-hover 300ms forwards;
 }
 
-@keyframes nav-buttons-intro {
+@keyframes left-intro {
   from {
     transform: translateX(-100%)
   }
@@ -81,14 +88,17 @@ body {
 
 #right-nav {
   position: absolute;
-  top: 16%;
+  top: 10%;
   right: 10%;
+
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   opacity: 0;
 
-  animation: 2s right-nav-intro 1s forwards
+  animation: 2s right-intro 1s forwards
 }
 
-@keyframes right-nav-intro {
+@keyframes right-intro {
   from {
     transform: translateX(50px);
   }

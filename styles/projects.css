@@ -11,6 +11,7 @@
   font-family: 'Heebo', sans-serif;
   font-weight: bolder;
   font-size: 5rem;
+  display: inline;
 
   position: absolute;
   top: 210%;
@@ -19,4 +20,106 @@
   overflow: hidden;
   width: 42rem;
   animation: type 3s; 
+}
+
+.cycle-buttons {
+  color: white;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.left-cycle {
+  position: absolute;
+  top: 260%;
+  left: 17.5%;
+  transition: 150ms;
+  animation: nav-buttons-hover 300ms forwards;
+}
+
+.left-cycle:hover {
+  color: rgb(235, 92, 161);
+  animation: -nav-buttons-hover 300ms forwards;
+  cursor: pointer;
+}
+
+.right-cycle {
+  position: absolute;
+  top: 260%;
+  right: 17.5%;
+  transition: 150ms;
+  animation: -nav-buttons-hover 300ms forwards;
+}
+
+.right-cycle:hover {
+  color: rgb(235, 92, 161);
+  animation: nav-buttons-hover 300ms forwards;
+  cursor: pointer;
+}
+
+.project-page-1 {
+  background-color: rgb(55, 48, 69);
+  border-radius: 32px;
+
+  position: absolute;
+  top: 230%;
+  left: 25%;
+  right: 25%;
+  bottom: -190%;
+  animation: -enlarge 300ms forwards;
+}
+
+.project-page-1:hover {
+  animation: enlarge 300ms forwards;
+  cursor: pointer;
+}
+
+.project-page-2 {
+  background-color: rgb(55, 48, 69);
+  border-radius: 32px;
+  visibility: hidden;
+
+  position: absolute;
+  top: 225%;
+  left: 25%;
+  right: 25%;
+  bottom: -190%;
+}
+
+@keyframes enlarge {
+  from {
+    scale: 100%;
+  }
+  to {
+    scale: 102.5%;
+  }
+}
+@keyframes -enlarge {
+  from {
+    scale: 102.5%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+.thumbtags {
+  display: table-row;
+}
+.thumbnail {
+  display: table-cell;
+  position: relative;
+  margin-left: 2rem;
+  margin-top: 2rem;
+
+  border-radius: 16px;
+  width: 85%;
+}
+
+.tags {
+  display: table-cell;
+  position: relative;
+  margin-right: 2rem;
+  width: 40%;
 }

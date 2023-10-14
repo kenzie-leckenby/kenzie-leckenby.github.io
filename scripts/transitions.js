@@ -207,3 +207,36 @@ window.addEventListener('scroll', () => {
     projectVisibility = true;
   }
 })
+
+const themeButton = document.getElementsByClassName('theme-switcher').item(0);
+let currentTheme = 0;
+
+themeButton.addEventListener('click', () => {
+  if (currentTheme === 0) {
+    themeButton.innerHTML = '<i class="fa-regular fa-sun fa-2xl theme"></i>';
+    document.body.style.backgroundColor = 'rgb(200, 188, 220)';
+    document.body.style.color = 'rgb(29, 25, 36)';
+
+    document.querySelector('.project-page-1').style.backgroundColor = 'rgb(180, 160, 205)';
+    document.querySelectorAll('a').forEach((element) => {
+      element.style.color = 'rgb(29, 25, 36)';
+    })
+    document.querySelector('.theme-switcher').style.color = 'rgb(29, 25, 36)';
+
+    currentTheme = 1;
+  }
+  else {
+    themeButton.innerHTML = '<i class="fa-regular fa-moon fa-2xl theme"></i>';
+
+    document.body.style.backgroundColor = 'rgb(29, 25, 36)';
+    document.body.style.color = 'rgb(255, 255, 255)';
+
+    document.querySelector('.project-page-1').style.backgroundColor = 'rgb(55, 48, 69)';
+    document.querySelectorAll('a').forEach((element) => {
+      element.style.color = 'rgb(255, 255, 255)';
+    })
+    document.querySelector('.theme-switcher').style.color = 'rgb(255, 255, 255)';
+
+    currentTheme = 0;
+  }
+})

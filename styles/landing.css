@@ -128,7 +128,7 @@ span {
   animation: 2s left-intro 1s forwards;
 }
 
-.nav-buttons {
+.hover-ani {
   font-size: 3rem;
   text-decoration: none;
   margin-top: 1rem;
@@ -141,7 +141,7 @@ span {
   animation: -nav-buttons-hover 300ms forwards;
 }
 
-.nav-buttons:hover {
+.hover-ani:hover {
   color: rgb(235, 92, 161);
   animation: nav-buttons-hover 300ms forwards;
 }
@@ -196,7 +196,14 @@ span {
   }
 }
 
+.theme-switcher {
+  background: none;
+  border: none;
+  color: white;
+}
+
 .theme {
+  font-size: 2rem;
   transition: 150ms;
   animation: -jump-effect 300ms forwards;
 }

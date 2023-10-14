@@ -1,5 +1,16 @@
 body {
   background-color: rgb(29, 25, 36);
+  color: white;
+  font-family: 'Heebo', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  white-space: 0;
 }
 
 #landing {
@@ -10,8 +21,6 @@ body {
 }
 
 .title {
-  color: white; 
-  font-family: 'Heebo', sans-serif;
   font-weight: bolder;
   font-size: 5rem;
 
@@ -20,13 +29,94 @@ body {
   left: 10%;
   white-space: nowrap;
   overflow: hidden;
-  width: 42rem;
-  animation: type 3s; 
+  width: 38.25rem;
 }
 
-@keyframes type{ 
-  from { width: 0; } 
-} 
+.char-0 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards;
+}
+.char-1 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .1s;
+}
+.char-2 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .2s;
+}
+.char-3 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .3s;
+}
+.char-4 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .4s;
+}
+.char-5 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .5s;
+}
+.char-6 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .6s;
+}
+.char-7 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .7s;
+}
+.char-8 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .8s;
+}
+.char-9 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards .9s;
+}
+.char-10 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards 1s;
+}
+.char-11 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards 1.1s;
+}
+.char-12 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards 1.2s;
+}
+.char-13 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards 1.3s;
+}
+.char-14 {
+  opacity: 0;
+  display: inline-block;
+  animation: pop 1s forwards 1.4s;
+}
+
+@keyframes pop{
+  from {
+    transform: translateY(15%);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .page-nav {
   position: absolute;
@@ -39,13 +129,11 @@ body {
 }
 
 .nav-buttons {
-  color: white;
-  font-family: 'Heebo', sans-serif;
   font-size: 3rem;
   text-decoration: none;
   margin-top: 1rem;
   padding: 0;
-  
+
   display: block;
   position: relative;
 
@@ -60,7 +148,7 @@ body {
 
 @keyframes left-intro {
   from {
-    transform: translateX(-100%)
+    transform: translateX(-100%);
   }
   to {
     opacity: 1;
@@ -109,7 +197,6 @@ body {
 }
 
 .theme {
-  color: white;
   transition: 150ms;
   animation: -jump-effect 300ms forwards;
 }
@@ -128,7 +215,6 @@ body {
 }
 
 .linkedIn {
-  color: white;
   transition: 150ms;
   margin-left: 2rem;
   animation: -jump-effect 300ms forwards;
@@ -140,7 +226,6 @@ body {
 }
 
 .github {
-  color: white;
   transition: 150ms;
   margin-left: 2rem;
   animation: -jump-effect 300ms forwards;

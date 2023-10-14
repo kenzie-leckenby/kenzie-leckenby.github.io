@@ -6,9 +6,7 @@
 }
 
 .about-me {
-  color: white; 
-  font-family: 'Heebo', sans-serif;
-  font-weight: bolder;
+  font-weight: bold;
   font-size: 5rem;
 
   position: absolute;
@@ -17,40 +15,9 @@
   white-space: nowrap;
   overflow: hidden;
   width: 42rem;
-  animation: type 3s; 
-}
-
-.back-button {
-  color: white;
-  font-family: 'Heebo', sans-serif;
-  text-decoration: none;
-  font-size: 2rem;
-
-  display: block;
-  position: absolute;
-  top: 115%;
-  right: 12%;
-  opacity: 0;
-
-  animation: 2s right-intro 1s forwards
-}
-
-.up {
-  color: white;
-  transition: 150ms;
-  animation: -jump-effect 300ms forwards;
-}
-
-.up:hover {
-  color: rgb(235, 92, 161);
-  cursor: pointer;
-  animation: jump-effect 300ms forwards;
 }
 
 .bio {
-  color: white;
-  font-family: 'Heebo', sans-serif;
-  text-decoration: none;
   font-size: 2rem;
   display: inline-block;
 
@@ -58,13 +25,25 @@
   top: 127.5%;
   left: 10%;
   right: 10%;
-
-  opacity: 0;
-  animation: 2s left-intro 1s forwards;
 }
 
 .bio-img {
   display: inline-block;
   width: 15rem;
   border-radius: 32px;
+  opacity: 0;
+  animation: pop 1s forwards 2s;
+}
+
+.bio-paragraph {
+  display: inline-block;
+  opacity: 0;
+  animation: pop 1s forwards 2s;
+}
+
+@keyframes pop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

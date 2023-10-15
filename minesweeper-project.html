@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+  <title>Minesweeper Project</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&family=Heebo:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b57dc0fa81.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="styles/minesweeper.css">
+</head>
+
+
+
+<body>
+	<div class="screen-container">
+		<div class="top-row-container">
+			<div class="top-row-name-container">
+				<a href="index.html">Kenzie Leckenby</a>
+			</div>
+			<div class="top-row-game-container">
+				<div>
+					<p><span class="numbers margin-left-05" id="bombs-hundreds">0</span><span class="numbers margin-left-05" id="bombs-tens">0</span><span class="numbers margin-left-05" id="bombs-ones">0</span><span class="text-size-2 margin-left-05">Bombs Left</span></p>
+				</div>
+				<button id="reset-button" class="buttons">Reset</button>
+				<p><span class="text-size-2 margin-right-05">Time Spent</span><span class="numbers margin-right-05" id="timer-hundreds">0</span><span class="numbers margin-right-05" id="timer-tens">0</span><span class="numbers margin-right-05" id="timer-ones">0</span></p>
+			</div>
+		</div>
+
+		<div class="minesweeper-game-container">
+			<div class="minesweeper-options">
+				<p class="text-size-header">Game Settings</p>
+				<div class="text-size-2">Bomb Density: <input class="input-box" type="" placeholder="00%"></div>
+			</div>
+			<div class="minesweeper-tiles">
+				<button class="blank-tile"></button>
+			</div>
+		</div>
+	</div>
+
+	<script src="scripts/minesweeper.js"></script>
+	<script src="scripts/transitions.js"></script>
+</body>

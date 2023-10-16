@@ -43,7 +43,7 @@ a {
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 1rem;
-    width: 21%;
+    width: 24.5rem;
 
     align-self: center;
 }
@@ -52,7 +52,7 @@ a {
     border-color: rgb(55, 48, 69);
     border-style: solid;
     border-radius: .75rem;
-    width: 79%;
+    width: 93rem;
 
     display: flex;
     justify-content: space-between;
@@ -86,27 +86,48 @@ a {
 
 .minesweeper-options {
     padding-left: 1rem;
-    width: 21%;
+    width: 24.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .minesweeper-tiles {
-    width: 79%;
-    display: grid;
+    width: 93rem;
+    display: flex;
+    flex-flow: row wrap;
     border-style: solid;
     border-color: rgb(55, 48, 69);
     border-radius: .75rem;
+    margin-bottom: 1rem;
 }
 
 .blank-tile {
     background-color: rgb(118, 92, 136);
-    border-color: rgb(55, 48, 69);
-    border-style: solid;
-    border-width: .25rem;
+    border-style: none;
+    margin: .232rem;
     border-radius: .5rem;
 
     width: 5rem;
     height: 5rem;
 
+}
+
+.revealed-tile {
+    background-color: rgb(29, 25, 36);
+
+    border-color: rgb(55, 48, 69);
+    border-style: solid;
+    margin: .232rem;
+    border-radius: .5rem;
+
+    color: white;
+    font-size: 2rem;
+    align-self: center;
+
+    width: 5rem;
+    height: 5rem;
+}
+
+.bomb {
+    color: rgb(184, 11, 68);
 }

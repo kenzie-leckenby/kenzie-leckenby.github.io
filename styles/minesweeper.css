@@ -10,20 +10,21 @@ a {
 }
 
 .text-size-2 {
-    font-size: 2rem;
+    font-size: 32px;
     align-self: center;
 }
 .text-size-header {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: bold;
     align-self: center;
 }
+
 .margin-left-05 {
-    margin-left: .5rem;
+    margin-left: 8px;
 }
 
 .margin-right-05 {
-    margin-right: .5rem;
+    margin-right: 8px;
 }
 
 .screen-container {
@@ -37,13 +38,13 @@ a {
 
 .top-row-name-container {
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: bold;
 
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 1rem;
-    width: 24.5rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    width: 392px;
 
     align-self: center;
 }
@@ -51,30 +52,30 @@ a {
 .top-row-game-container {
     border-color: rgb(55, 48, 69);
     border-style: solid;
-    border-radius: .75rem;
-    width: 93rem;
+    border-radius: 12px;
+    width: 1488px;
 
     display: flex;
     justify-content: space-between;
 }
 
 .numbers {
-    font-size: 3rem;
+    font-size: 48px;
     background-color: rgb(55, 48, 69);
-    border-radius: .5rem;
-    padding: .5rem;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 .buttons {
-    font-size: 2rem;
+    font-size: 32px;
     color: white;
 
-    padding: .5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    border-radius: .5rem;
-    margin-top: .5rem;
-    height: 5.3rem;
+    padding: 8px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 8px;
+    margin-top: 8px;
+    height: 85px;
     border-style: none;
     background-color: rgb(55, 48, 69);
 }
@@ -85,30 +86,30 @@ a {
 }
 
 .minesweeper-options {
-    padding-left: 1rem;
-    width: 24.5rem;
+    padding-left: 16px;
+    width: 392px;
     display: flex;
     flex-direction: column;
 }
 
 .minesweeper-tiles {
-    width: 93rem;
+    width: 1488px;
     display: flex;
     flex-flow: row wrap;
     border-style: solid;
     border-color: rgb(55, 48, 69);
-    border-radius: .75rem;
-    margin-bottom: 1rem;
+    border-radius: 12px;
+    margin-bottom: 16px;
 }
 
 .blank-tile {
     background-color: rgb(118, 92, 136);
     border-style: none;
-    margin: .232rem;
-    border-radius: .5rem;
+    margin: 3.75px;
+    border-radius: 8px;
 
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
 
 }
 
@@ -117,15 +118,15 @@ a {
 
     border-color: rgb(55, 48, 69);
     border-style: solid;
-    margin: .232rem;
-    border-radius: .5rem;
+    margin: 3.75px;
+    border-radius: 8px;
 
     color: white;
-    font-size: 2rem;
+    font-size: 32px;
     align-self: center;
 
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
 }
 
 .bomb {

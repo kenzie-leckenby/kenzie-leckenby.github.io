@@ -22,14 +22,14 @@ span {
 
 .title {
   font-weight: bolder;
-  font-size: 5rem;
+  font-size: 80px;
 
   position: absolute;
   top: 10%;
   left: 10%;
   white-space: nowrap;
   overflow: hidden;
-  width: 38.25rem;
+  width: 612px;
 }
 
 .char-0 {
@@ -122,16 +122,16 @@ span {
   position: absolute;
   top: 18%;
   left: 10%;
-  margin-top: 2rem;
+  margin-top: 32px;
   opacity: 0;
 
   animation: 2s left-intro 1s forwards;
 }
 
 .hover-ani {
-  font-size: 3rem;
+  font-size: 48px;
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: 16px;
   padding: 0;
 
   display: block;
@@ -179,8 +179,8 @@ span {
   top: 10%;
   right: 10%;
 
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
   opacity: 0;
 
   animation: 2s right-intro 1s forwards
@@ -203,7 +203,7 @@ span {
 }
 
 .theme {
-  font-size: 2rem;
+  font-size: 32px;
   transition: 150ms;
   animation: -jump-effect 300ms forwards;
 }
@@ -216,14 +216,14 @@ span {
 
 .divider {
   color:  rgb(235, 92, 161);
-  margin-left: 2rem;
+  margin-left: 32px;
   font-size: 25px;
   font-weight: bold;
 }
 
 .linkedIn {
   transition: 150ms;
-  margin-left: 2rem;
+  margin-left: 32px;
   animation: -jump-effect 300ms forwards;
 }
 
@@ -234,7 +234,7 @@ span {
 
 .github {
   transition: 150ms;
-  margin-left: 2rem;
+  margin-left: 32px;
   animation: -jump-effect 300ms forwards;
 
 }
